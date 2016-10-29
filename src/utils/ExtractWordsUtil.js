@@ -15,8 +15,7 @@ var ExtractWordsUtil = {
 
     for (var i = 0; i < content.length; i++) {
       var chr = content[i];
-
-      if (chr.match(/[_a-z0-9-]/i)) {
+      if (chr.match(/[a-z0-9]/i)) {
         word += chr;
       } else {
         used[word] = true;
@@ -58,7 +57,7 @@ var ExtractWordsUtil = {
         continue;
       }
 
-      if (letter.match(/[_a-z0-9-]/i)) {
+      if (letter.match(/[a-z0-9]/i)) {
         word += letter;
       } else {
         addWord(words, word);

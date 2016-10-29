@@ -248,6 +248,14 @@ describe('purify', function () {
       expect(this.result.indexOf('p') > -1).to.equal(true);
     });
 
+    it('removes unused h2', function () {
+      expect(this.result.indexOf('h2') === -1).to.equal(true);
+    });
+
+    it('removes unused span#bar', function () {
+      expect(this.result.indexOf('span#bar') === -1).to.equal(true);
+    });
+
     it('removes .unused-class-name', function () {
       expect(this.result.indexOf('.unused-class-name') === -1).to.equal(true);
     });

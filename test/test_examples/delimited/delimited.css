@@ -1,3 +1,3 @@
-.unused-class-name, h1, p {
+.unused-class-name, h1, h2, p, span#bar {
   color: red;
 }
